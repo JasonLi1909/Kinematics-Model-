@@ -8,12 +8,12 @@ import javax.swing.border.Border;
 
 public class KinematicsModel extends JFrame{
 	static Timer boxTimer, cannonTimer;
+	static double secElap;
+	final static double vertAccel = -9.81; 
+	final int pixelsPerMeter = 5; 	 
 	int timerDelay = 1;
-	final int pixelsPerMeter = 5; 	
-	static double secElap; 
 	int count; 
 	double secInc = (double)((timerDelay) + 40) / 1000;
-	final static double vertAccel = -9.81; 
 	cannonBox box; 
 	
 	//constructs Kinematics Model 
